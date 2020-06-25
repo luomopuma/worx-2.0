@@ -6,6 +6,8 @@ import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 
+import worx from '../img/logo-color-transparent.png'
+
 export const IndexPageTemplate = ({
   image,
   title,
@@ -22,7 +24,7 @@ export const IndexPageTemplate = ({
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
-        backgroundPosition: `top left`,
+        backgroundPosition: `top center`,
         backgroundAttachment: `fixed`,
       }}
     >
@@ -40,11 +42,12 @@ export const IndexPageTemplate = ({
           className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
           style={{
             boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
+              'rgb(107, 194, 82) 0.5rem 0px 0px, rgb(107, 194, 82) -0.5rem 0px 0px',
+            backgroundColor: 'rgb(107, 194, 82)',
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',
+            margin: '1rem',
           }}
         >
           {title}
@@ -53,15 +56,17 @@ export const IndexPageTemplate = ({
           className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
           style={{
             boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
+              'rgb(107, 194, 82) 0.5rem 0px 0px, rgb(107, 194, 82) -0.5rem 0px 0px',
+            backgroundColor: 'rgb(107, 194, 82)',
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',
+            margin: '1rem',
           }}
         >
           {subheading}
         </h3>
+        <img src={worx} alt="Worx-logo" style={{ width: '288px', maxHeight: 'initial', padding:'1em', margin:'auto' }} />
       </div>
     </div>
     <section className="section section--gradient">
